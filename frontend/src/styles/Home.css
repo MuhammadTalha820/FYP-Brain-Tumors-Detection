@@ -1,0 +1,273 @@
+/* Updated CSS */
+.home {
+    font-family: 'Roboto', sans-serif;
+    color: #f5f5f5;
+    background: linear-gradient(120deg, #1c1c1c, #2c3e50);
+    scroll-behavior: smooth;
+    margin-top: 100px;
+}
+
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero-section {
+    position: relative;
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    animation: fadeIn 2s;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 3s;
+}
+
+.hero-button {
+    padding: 10px 30px;
+    background: #f39c12;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.hero-button:hover {
+    background: #e67e22;
+}
+
+.blogs-section .section-title {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-bottom: 40px;
+}
+
+.blog-card {
+    background: #34495e;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    /* Ensure content stays in a column */
+    height: 100%;
+    /* Ensures equal height for all cards */
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+}
+
+.blog-card .blog-content {
+    flex-grow: 1;
+    /* Ensures the content takes up the remaining space */
+}
+
+.blog-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.blog-link {
+    color: #f39c12;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog-link:hover {
+    text-decoration: underline;
+}
+
+.blog-image {
+    width: 100%;
+    height: 200px;
+    /* Fixed height for uniformity */
+    object-fit: cover;
+    /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* About Section */
+.about-section {
+    background: linear-gradient(120deg, #34495e, #2c3e50);
+    color: white;
+    padding: 80px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.about-description {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+/* Impact Section */
+.impact-section {
+    background: linear-gradient(120deg, #2c3e50, #34495e);
+    color: white;
+    padding: 80px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.impact-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.impact-description {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.impact-description:last-child {
+    margin-bottom: 0;
+}
+
+/* Image styling for About Section */
+.federated-learning-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling for Impact Section */
+.impact-graph {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsiveness for images */
+@media (max-width: 768px) {
+
+    .federated-learning-image,
+    .impact-graph {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about-description,
+    .impact-description {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .about-section,
+    .impact-section {
+        padding: 50px 15px;
+    }
+}
+
+
+
+.footer {
+    background: #1c1c1c;
+    padding: 20px;
+    color: white;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .blogs-section .section-title {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+    }
+}

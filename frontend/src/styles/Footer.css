@@ -1,0 +1,29 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #1E2A38;
+    padding: 20px 0;
+    margin: 10px 0;
+    text-align: center;
+    color: #ECF0F1;
+    font-family: "Arial, sans-serif";
+    font-size: 0.9rem;
+    opacity: 100;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 0.8rem;
+        padding: 7.5px 0;
+    }
+}

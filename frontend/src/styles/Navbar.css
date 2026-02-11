@@ -1,0 +1,134 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #1E2A38, #2C3E50);
+    padding: 15px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease-in-out;
+    position: relative;
+}
+
+.navbar {
+    z-index: 1000;
+    position: relative;
+}
+
+
+/* Logo Styling */
+.logo {
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ECF0F1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F39C12;
+    transform: translateY(-3px);
+}
+
+/* Active link styling */
+.nav-links a.active {
+    color: #F39C12;
+    /* Change the color for active links */
+}
+
+/* Logout button styles */
+.nav-link-btn {
+    background: none;
+    border: none;
+    color: #ECF0F1;
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+    padding: 0;
+}
+
+.nav-link-btn:hover {
+    color: #F39C12;
+    transform: translateY(-3px);
+}
+
+/* Toggle Button for Mobile */
+.toggle-button {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 100;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #ECF0F1;
+    margin: 4px 0;
+    transition: transform 0.4s, opacity 0.4s;
+}
+
+.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.open:nth-child(2) {
+    opacity: 0;
+}
+
+.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(44, 62, 80, 0.95);
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 15px;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        display: none;
+    }
+
+    .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        display: flex;
+    }
+}

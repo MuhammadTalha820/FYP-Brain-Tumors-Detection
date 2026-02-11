@@ -1,0 +1,76 @@
+/* Container for the Contact Us page */
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #1E2A38, #2C3E50);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #ECF0F1;
+    font-family: "Arial, sans-serif";
+    text-align: center;
+}
+
+/* Page Heading */
+.contact-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #F39C12;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input and Textarea Styling */
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    background: #34495E;
+    color: #ECF0F1;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background: #2C3E50;
+    transform: scale(1.02);
+}
+
+/* Textarea Specifics */
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button */
+.contact-form button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: #F39C12;
+    color: #1E2A38;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #D68910;
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+    }
+}
