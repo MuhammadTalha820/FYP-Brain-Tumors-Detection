@@ -43,7 +43,7 @@ const Home = () => {
     ];
 
     return (
-        <div className="homepage">
+        <div className="homepage ">
             {/* Hero Section */}
             <section className="hero-section">
                 <div className="overlay"></div>
@@ -57,7 +57,7 @@ const Home = () => {
                         Brain Tumor Detection Using Federated Learning
                     </motion.h1>
                     <motion.p
-                        className="hero-subtitle"
+                        className="hero-subtitle "
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.5 }}
@@ -77,8 +77,8 @@ const Home = () => {
             </section>
 
             {/* Blog Section */}
-            <section id="blogs" className="blogs-section">
-                <h2 className="section-title">Latest Blogs</h2>
+            <section id="blogs" className="blogs-section ">
+                <h2 className="section-title ">Latest Blogs</h2>
                 <Swiper
                     modules={[Navigation, Pagination]}
                     navigation
@@ -108,7 +108,7 @@ const Home = () => {
 
             {/* About Section */}
             <section className="about-section">
-                <div className="about-content">
+                <div className="about-content ">
                     <h2 className="section-title">About Our Project: Revolutionizing Brain Tumor Detection</h2>
                     <p className="about-description">
                         Our project leverages cutting-edge AI technologies, specifically Federated Learning, to enhance the accuracy and speed of brain tumor detection. Traditional AI models require centralized data, which poses significant risks to patient privacy. Federated Learning enables the development of powerful AI models by allowing medical institutions to collaborate without sharing sensitive data. This decentralized approach ensures that patient data remains secure while still allowing AI algorithms to learn from diverse datasets.
