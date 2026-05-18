@@ -55,8 +55,8 @@ const Login = () => {
     };
 
     return (
-        <div className="login-wrapper"> {/* Full-Screen Background */}
-            <div className="login-container"> {/* Centered Form */}
+        <div className="login-wrapper "> {/* Full-Screen Background */}
+            <div className="login-container "> {/* Centered Form */}
                 <h2>Login</h2>
                 <form onSubmit={handleLogin} className="login-form">
                     <input
